@@ -1,0 +1,58 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 12px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  background: rgb(106, 126, 214);
+  background: linear-gradient(
+    73deg,
+    rgba(106, 126, 214, 1) 29%,
+    rgba(87, 166, 245, 1) 84%
+  );
+}
+
+.bar span {
+  writing-mode: vertical-lr;
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
+}
+.barWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+/* controls */
+.controlWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  padding: 30px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sliderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 380px;
+}
+.slider {
+  width: 300px;
+}
+
+.actionsWrapper {
+  display: flex;
+  gap: 10px;
+}
