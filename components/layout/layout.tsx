@@ -1,5 +1,5 @@
 import { cloneElement, ReactElement, useState } from "react";
-
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {
@@ -16,7 +16,7 @@ import {
 } from "@mantine/core";
 import { Sun, MoonStars } from "tabler-icons-react";
 import { generateNewArray } from "../../helpers/generateNewArray";
-
+import logo from "../../public/favicon.png";
 import classes from "./layout.module.css";
 
 const navigation = [
@@ -25,8 +25,16 @@ const navigation = [
     route: "/",
   },
   {
-    name: "Bubble Sort",
+    name: "Bubble Sort (Easy)",
     route: "/bubble-sort",
+  },
+  {
+    name: "Insertion Sort (Easy)",
+    route: "/insertion-sort",
+  },
+  {
+    name: "Selection Sort (Easy)",
+    route: "/selection-sort",
   },
   {
     name: "Merge Sort",
@@ -35,14 +43,6 @@ const navigation = [
   {
     name: "Quick Sort",
     route: "/quick-sort",
-  },
-  {
-    name: "Insertion Sort",
-    route: "/insertion-sort",
-  },
-  {
-    name: "Selection Sort",
-    route: "/selection-sort",
   },
   {
     name: "Heap Sort",
@@ -117,8 +117,16 @@ export default function Layout({ children }: IProps) {
               />
             </MediaQuery>
 
-            <Text style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
-              SORTING VISUALIZER
+            <Text
+              style={{
+                fontSize: "1.5rem",
+                fontWeight: "bold",
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+              }}
+            >
+              <Image src={logo} height={30} width={30} /> SORTING VISUALIZER
             </Text>
             <ActionIcon
               variant="outline"

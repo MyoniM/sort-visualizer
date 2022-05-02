@@ -30,7 +30,7 @@ export default function Bars(prop: IProp) {
 
   const [proportionalHeight, setProportionalHeight] = useState(0);
   useEffect(() => {
-    let screenHeight = window.innerHeight;
+    let screenHeight = window.innerHeight /1.5;
     setProportionalHeight(screenHeight * 1.6);
   }, []);
 
@@ -39,7 +39,21 @@ export default function Bars(prop: IProp) {
       <div className={classes.barWrapper}>
         {prop.result.array.map((e, i) => {
           let elementHeight = (e * proportionalHeight) / 100;
-          return <Bar key={i} value={e} height={elementHeight}></Bar>;
+          let isCurrentlyComparedElement = false;
+          // check if the bar is the current element being compared
+          if (prop.result.items != undefined) {
+            isCurrentlyComparedElement =
+              prop.result.items.filter((el) => e == el).length > 0;
+          }
+
+          return (
+            <Bar
+              key={i}
+              value={e}
+              height={elementHeight}
+              color={false ? "red" : undefined}
+            />
+          );
         })}
       </div>
       <div className={classes.controlWrapper}>

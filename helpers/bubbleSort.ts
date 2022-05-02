@@ -1,5 +1,7 @@
 export interface IResult {
   array: number[];
+  items?: number[];
+  lessThanIndex?: number;
 }
 
 export function bubbleSort(arrToBeSorted: number[]) {
@@ -14,10 +16,11 @@ export function bubbleSort(arrToBeSorted: number[]) {
         arr[j] = arr[j + 1];
         arr[j + 1] = temp;
         var hasSwapped = true;
+        // push only when array elements are swapped
+        // push new array! it takes reference and all of'em will be the same
         resultArray.push({ array: [...arr] });
       }
     }
-
     if (!hasSwapped) break;
   }
 
