@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { IResult } from "../helpers/bubbleSort";
+import { IResult } from "../helpers/algorithms/bubbleSort";
 import Bars from "./bar/bars";
 
 export interface IBarProp {

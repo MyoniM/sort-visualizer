@@ -54,7 +54,10 @@ interface IProps {
   children: ReactElement;
 }
 export default function Layout({ children }: IProps) {
-  const [array, _] = useState<number[]>(generateNewArray());
+  const [array, _] = useState<number[]>(
+    generateNewArray()
+    // [7, 4, 10, 8, 3, 1]
+  );
   const [opened, setOpened] = useState(false);
   const theme = useMantineTheme();
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();

@@ -18,7 +18,7 @@ export function bubbleSort(arrToBeSorted: number[]) {
         var hasSwapped = true;
         // push only when array elements are swapped
         // push new array! it takes reference and all of'em will be the same
-        resultArray.push({ array: [...arr] });
+        resultArray.push({ items: [j + 1, j], array: [...arr] });
       }
     }
     if (!hasSwapped) break;

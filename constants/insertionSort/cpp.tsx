@@ -1,4 +1,4 @@
-export const bubbleSortCpp = `
+export const cpp = `
 // C++ program for insertion sort
 #include <bits/stdc++.h>
 using namespace std;
@@ -39,5 +39,4 @@ int main(){
  
     return 0;
 }
-// This code is taken from https://www.geeksforgeeks.org/bubble-sort/
 `;

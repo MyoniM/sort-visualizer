@@ -1,4 +1,4 @@
-export const bubbleSortJs = `
+export const js = `
 <script>
 // Javascript program for insertion sort 
    
@@ -35,6 +35,5 @@ function printArray(arr, n) {
     insertionSort(arr, n); 
     printArray(arr, n); 
      
-// This code is taken from https://www.geeksforgeeks.org/bubble-sort/
 </script>
 `;

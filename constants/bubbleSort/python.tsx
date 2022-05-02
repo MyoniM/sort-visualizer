@@ -1,4 +1,4 @@
-export const bubbleSortPython = `# Python3 Optimized implementation
+export const python = `# Python3 Optimized implementation
 # of Bubble sort
  
 # An optimized version of Bubble Sort
@@ -35,5 +35,4 @@ print ("Sorted array :")
 for i in range(len(arr)):
     print ("%d" %arr[i],end=" ")
 
-// This code is taken from https://www.geeksforgeeks.org/bubble-sort/
 `

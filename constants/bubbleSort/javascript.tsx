@@ -1,4 +1,4 @@
-export const bubbleSortJs = `
+export const js = `
 <script>
 // Optimized javaScript implementation
 // of Bubble sort
@@ -39,6 +39,5 @@ function bubbleSort(arr, n){
         document.write("Sorted array: ");
         printArray(arr, n);
  
-// This code is taken from https://www.geeksforgeeks.org/bubble-sort/
 </script>
 `

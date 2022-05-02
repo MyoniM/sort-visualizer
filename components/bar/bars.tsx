@@ -10,7 +10,7 @@ import {
   PlayerStop,
   RotateClockwise,
 } from "tabler-icons-react";
-import { IResult } from "../../helpers/bubbleSort";
+import { IResult } from "../../helpers/algorithms/bubbleSort";
 import { MARKS } from "../../constants/options";
 interface IProp {
   result: IResult;
@@ -30,7 +30,7 @@ export default function Bars(prop: IProp) {
 
   const [proportionalHeight, setProportionalHeight] = useState(0);
   useEffect(() => {
-    let screenHeight = window.innerHeight /1.5;
+    let screenHeight = window.innerHeight / 1.5;
     setProportionalHeight(screenHeight * 1.6);
   }, []);
 
@@ -43,7 +43,7 @@ export default function Bars(prop: IProp) {
           // check if the bar is the current element being compared
           if (prop.result.items != undefined) {
             isCurrentlyComparedElement =
-              prop.result.items.filter((el) => e == el).length > 0;
+              prop.result.items.findIndex((el) => el == i) !== -1;
           }
 
           return (
@@ -51,7 +51,7 @@ export default function Bars(prop: IProp) {
               key={i}
               value={e}
               height={elementHeight}
-              color={false ? "red" : undefined}
+              color={isCurrentlyComparedElement ? "#B0C4DE" : undefined}
             />
           );
         })}

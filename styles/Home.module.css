@@ -25,18 +25,18 @@
 }
 
 .algorithmWrapper {
-  justify-content: center;
+  /* justify-content: center; */
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 .algorithm {
+  margin-bottom: 15px;
   border-radius: 5px;
   width: 32%;
   padding: 10px;
   padding-bottom: 0;
   min-width: 520px;
-  background-color: aqua;
 }
 
 .algorithm h1 {

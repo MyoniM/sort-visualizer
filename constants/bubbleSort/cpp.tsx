@@ -1,4 +1,4 @@
-export const bubbleSortCpp = `
+export const cpp = `
 // Optimized implementation of Bubble sort
 #include <bits/stdc++.h>
 using namespace std;
@@ -37,5 +37,4 @@ int main(){
     printArray(arr, n);
     return 0;
 }
-// This code is taken from https://www.geeksforgeeks.org/bubble-sort/
 `

@@ -1,4 +1,4 @@
-export const bubbleSortPython = `# Python program for implementation of Insertion Sort
+export const python = `# Python program for implementation of Insertion Sort
  
 # Function to do insertion sort
 def insertionSort(arr):
@@ -24,5 +24,4 @@ insertionSort(arr)
 for i in range(len(arr)):
     print ("% d" % arr[i])
     
-// This code is taken from https://www.geeksforgeeks.org/bubble-sort/
 `;

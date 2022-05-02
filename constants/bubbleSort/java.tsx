@@ -1,4 +1,4 @@
-export const bubbleSortJava = `// Optimized java implementation
+export const java = `// Optimized java implementation
 // of Bubble sort
 import java.io.*;
  
@@ -42,5 +42,4 @@ class GFG{
         System.out.println("Sorted array: ");
         printArray(arr, n);
     }
-// This code is taken from https://www.geeksforgeeks.org/bubble-sort/
 }`;

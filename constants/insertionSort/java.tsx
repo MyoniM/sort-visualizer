@@ -1,4 +1,4 @@
-export const bubbleSortJava = `// Java program for implementation of Insertion Sort
+export const java = `// Java program for implementation of Insertion Sort
 class InsertionSort {
     /*Function to sort array using insertion sort*/
     void sort(int arr[])    {
@@ -36,5 +36,4 @@ class InsertionSort {
  
         printArray(arr);
     }
-// This code is taken from https://www.geeksforgeeks.org/bubble-sort/
 }`;

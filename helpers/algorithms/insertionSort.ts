@@ -17,12 +17,13 @@ export function insertionSort(arrToBeSorted: number[]) {
       arr[j + 1] = arr[j];
       j = j - 1;
       resultArray.push({
+        items: [j + 1, j],
         array: [...arr],
       });
     }
-    // console.log({ items: [key], array: [...arr] });
     arr[j + 1] = key;
     resultArray.push({
+      items: [j + 1, j],
       array: [...arr],
     });
   }

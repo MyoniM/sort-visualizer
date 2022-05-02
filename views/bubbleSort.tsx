@@ -1,18 +1,18 @@
 import { Prism } from "@mantine/prism";
 import Image from "next/image";
 
-import javascriptLogo from "../public/svg/javascript.svg";
-import python from "../public/svg/python.svg";
-import java from "../public/svg/java.svg";
-import cpp from "../public/svg/c-plus-plus.svg";
-import { bubbleSortJs } from "../constants/bubbleSort/javascript";
-import { bubbleSortJava } from "../constants/bubbleSort/java";
-import { bubbleSortPython } from "../constants/bubbleSort/python";
-import { bubbleSortCpp } from "../constants/bubbleSort/cpp";
+import jsSvg from "../public/svg/javascript.svg";
+import pythonSvg from "../public/svg/python.svg";
+import javaSvg from "../public/svg/java.svg";
+import cppSvg from "../public/svg/c-plus-plus.svg";
+import { js } from "../constants/bubbleSort/javascript";
+import { java } from "../constants/bubbleSort/java";
+import { python } from "../constants/bubbleSort/python";
+import { cpp } from "../constants/bubbleSort/cpp";
 
 import { IProp } from "../pages";
 import InputArrayHeader from "../components/inputArrayHeader";
-import { bubbleSort } from "../helpers/bubbleSort";
+import { bubbleSort } from "../helpers/algorithms/bubbleSort";
 import Visualizer from "../components/visualizer";
 
 export default function BubbleSort(prop: IProp) {
@@ -48,9 +48,9 @@ export default function BubbleSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={javascriptLogo} height={20} width={20} />}
+          icon={<Image src={jsSvg} height={20} width={20} />}
         >
-          {bubbleSortJs}
+          {js}
         </Prism.Tab>
         <Prism.Tab
           language="python"
@@ -59,9 +59,9 @@ export default function BubbleSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={python} height={20} width={20} />}
+          icon={<Image src={pythonSvg} height={20} width={20} />}
         >
-          {bubbleSortPython}
+          {python}
         </Prism.Tab>
         <Prism.Tab
           language="cpp"
@@ -70,9 +70,9 @@ export default function BubbleSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={java} height={20} width={20} />}
+          icon={<Image src={javaSvg} height={20} width={20} />}
         >
-          {bubbleSortJava}
+          {java}
         </Prism.Tab>
         <Prism.Tab
           language="cpp"
@@ -81,9 +81,9 @@ export default function BubbleSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={cpp} height={20} width={20} />}
+          icon={<Image src={cppSvg} height={20} width={20} />}
         >
-          {bubbleSortCpp}
+          {cpp}
         </Prism.Tab>
       </Prism.Tabs>
     </div>

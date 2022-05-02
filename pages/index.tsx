@@ -4,8 +4,9 @@ import { useMantineTheme } from "@mantine/core";
 import classes from "../styles/Home.module.css";
 import InputArrayHeader from "../components/inputArrayHeader";
 import Visualizer from "../components/visualizer";
-import { insertionSort } from "../helpers/insertionSort";
-import { bubbleSort } from "../helpers/bubbleSort";
+import { insertionSort } from "../helpers/algorithms/insertionSort";
+import { bubbleSort } from "../helpers/algorithms/bubbleSort";
+import { selectionSort } from "../helpers/algorithms/selectionSort";
 
 export interface IProp {
   array: number[];
@@ -61,6 +62,12 @@ export default function Home(prop: IProp) {
             <h1>Insertion Sort</h1>
           </Link>
           <Visualizer algorithm={insertionSort} array={prop.array} />
+        </div>
+        <div className={classes.algorithm} style={style}>
+          <Link href={"/selection-sort"}>
+            <h1>Selection Sort</h1>
+          </Link>
+          <Visualizer algorithm={selectionSort} array={prop.array} />
         </div>
       </div>
     </div>
