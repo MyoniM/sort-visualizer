@@ -37,6 +37,10 @@ const navigation = [
     route: "/selection-sort",
   },
   {
+    name: "Counting Sort (Easy)",
+    route: "/counting-sort",
+  },
+  {
     name: "Merge Sort",
     route: "/merge-sort",
   },

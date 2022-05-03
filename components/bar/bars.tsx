@@ -51,7 +51,7 @@ export default function Bars(prop: IProp) {
               key={i}
               value={e}
               height={elementHeight}
-              color={isCurrentlyComparedElement ? "#B0C4DE" : undefined}
+              color={isCurrentlyComparedElement ? "turquoise" : undefined}
             />
           );
         })}

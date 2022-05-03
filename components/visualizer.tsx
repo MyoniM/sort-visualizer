@@ -19,7 +19,7 @@ export default function Visualizer(prop: IBarProp) {
       setTimeout(() => {
         setArrayBeingSorted(sortedArray[index]);
         setIndex(index + 1);
-      }, 200 / speed);
+      }, 300 / speed);
     }
     if (index == sortedArray.length && playing) setPlaying(false);
   }, [index, playing]);
