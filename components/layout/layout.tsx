@@ -40,18 +40,14 @@ const navigation = [
     name: "Counting Sort (Easy)",
     route: "/counting-sort",
   },
-  {
-    name: "Merge Sort",
-    route: "/merge-sort",
-  },
-  {
-    name: "Quick Sort",
-    route: "/quick-sort",
-  },
-  {
-    name: "Heap Sort",
-    route: "/heap-sort",
-  },
+  // {
+  //   name: "Quick Sort (Medium)",
+  //   route: "/quick-sort",
+  // },
+  // {
+  //   name: "Merge Sort (Medium)",
+  //   route: "/merge-sort",
+  // },
 ];
 
 interface IProps {

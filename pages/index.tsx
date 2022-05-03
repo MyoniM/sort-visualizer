@@ -8,6 +8,7 @@ import { insertionSort } from "../helpers/algorithms/insertionSort";
 import { bubbleSort } from "../helpers/algorithms/bubbleSort";
 import { selectionSort } from "../helpers/algorithms/selectionSort";
 import { countingSort } from "../helpers/algorithms/countingSort";
+import { quickSort } from "../helpers/algorithms/quickSort";
 
 export interface IProp {
   array: number[];
@@ -75,6 +76,12 @@ export default function Home(prop: IProp) {
           </Link>
           <Visualizer algorithm={selectionSort} array={prop.array} />
         </div>
+        {/* <div className={classes.algorithm} style={style}>
+          <Link href={"/quick-sort"}>
+            <h1>Quick Sort (Medium)</h1>
+          </Link>
+          <Visualizer algorithm={quickSort} array={prop.array} />
+        </div> */}
         <div className={classes.algorithm} style={style}>
           <Link href={"/counting-sort"}>
             <h1>Counting Sort (Easy)</h1>
