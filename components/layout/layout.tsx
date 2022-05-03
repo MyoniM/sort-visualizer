@@ -1,5 +1,4 @@
 import { cloneElement, ReactElement, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {
@@ -16,7 +15,7 @@ import {
 } from "@mantine/core";
 import { Sun, MoonStars } from "tabler-icons-react";
 import { generateNewArray } from "../../helpers/generateNewArray";
-import logo from "../../public/favicon.png";
+
 import classes from "./layout.module.css";
 
 const navigation = [
@@ -129,7 +128,7 @@ export default function Layout({ children }: IProps) {
                 gap: "10px",
               }}
             >
-              <Image src={logo} height={30} width={30} /> SORTING VISUALIZER
+              <img src={"/favicon.png"} height={30} width={30} /> SORTING VISUALIZER
             </Text>
             <ActionIcon
               variant="outline"

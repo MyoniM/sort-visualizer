@@ -1,10 +1,6 @@
 import { Prism } from "@mantine/prism";
-import Image from "next/image";
+import { Image } from '@mantine/core';
 
-import jsSvg from "../public/svg/javascript.svg";
-import pythonSvg from "../public/svg/python.svg";
-import javaSvg from "../public/svg/java.svg";
-import cppSvg from "../public/svg/c-plus-plus.svg";
 import { js } from "../constants/insertionSort/javascript";
 import { java } from "../constants/insertionSort/java";
 import { python } from "../constants/insertionSort/python";
@@ -74,7 +70,7 @@ export default function InsertionSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={jsSvg} height={20} width={20} />}
+          icon={<Image src={"/svg/javascript.svg"} height={20} width={20} />}
         >
           {js}
         </Prism.Tab>
@@ -85,7 +81,7 @@ export default function InsertionSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={pythonSvg} height={20} width={20} />}
+          icon={<Image src={"/svg/python.svg"} height={20} width={20} />}
         >
           {python}
         </Prism.Tab>
@@ -96,7 +92,7 @@ export default function InsertionSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={javaSvg} height={20} width={20} />}
+          icon={<Image src={"/svg/java.svg"} height={20} width={20} />}
         >
           {java}
         </Prism.Tab>
@@ -107,7 +103,7 @@ export default function InsertionSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={cppSvg} height={20} width={20} />}
+          icon={<Image src={"/svg/c-plus-plus.svg"} height={20} width={20} />}
         >
           {cpp}
         </Prism.Tab>

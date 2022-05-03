@@ -1,10 +1,6 @@
 import { Prism } from "@mantine/prism";
-import Image from "next/image";
+import { Image } from "@mantine/core";
 
-import jsSvg from "../public/svg/javascript.svg";
-import pythonSvg from "../public/svg/python.svg";
-import javaSvg from "../public/svg/java.svg";
-import cppSvg from "../public/svg/c-plus-plus.svg";
 import { js } from "../constants/countingSort/javascript";
 import { java } from "../constants/countingSort/java";
 import { python } from "../constants/countingSort/python";
@@ -24,7 +20,7 @@ export default function QuickSort(prop: IProp) {
       <h1>Quick Sort</h1>
       <h4 style={{ margin: 0 }}>Difficulty Level : Medium</h4>
       <p style={{ margin: 0 }}>Resource: GeeksForGeeks</p>
-    
+
       <p></p>
       <br />
       <h4>The following are implementations of Quick Sort. </h4>
@@ -36,7 +32,13 @@ export default function QuickSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={jsSvg} height={20} width={20} />}
+          icon={
+            <Image
+              src={"../public/svg/javascript.svg"}
+              height={20}
+              width={20}
+            />
+          }
         >
           {js}
         </Prism.Tab>
@@ -47,7 +49,9 @@ export default function QuickSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={pythonSvg} height={20} width={20} />}
+          icon={
+            <Image src={"../public/svg/python.svg"} height={20} width={20} />
+          }
         >
           {python}
         </Prism.Tab>
@@ -58,7 +62,7 @@ export default function QuickSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={javaSvg} height={20} width={20} />}
+          icon={<Image src={"../public/svg/java.svg"} height={20} width={20} />}
         >
           {java}
         </Prism.Tab>
@@ -69,7 +73,13 @@ export default function QuickSort(prop: IProp) {
           withLineNumbers
           copyLabel="Copy code to clipboard"
           copiedLabel="Code copied to clipboard"
-          icon={<Image src={cppSvg} height={20} width={20} />}
+          icon={
+            <Image
+              src={"../public/svg/c-plus-plus.svg"}
+              height={20}
+              width={20}
+            />
+          }
         >
           {cpp}
         </Prism.Tab>
