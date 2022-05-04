@@ -119,16 +119,9 @@ export default function Layout({ children }: IProps) {
               />
             </MediaQuery>
 
-            <Text
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: "bold",
-                display: "flex",
-                alignItems: "center",
-                gap: "10px",
-              }}
-            >
-              <img src={"/favicon.png"} height={30} width={30} /> SORTING VISUALIZER
+            <Text className={classes.topHeader}>
+              <img src={"/favicon.png"} height={30} width={30} /> SORTING
+              VISUALIZER
             </Text>
             <ActionIcon
               variant="outline"

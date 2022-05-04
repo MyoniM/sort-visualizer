@@ -56,3 +56,14 @@
   display: flex;
   gap: 10px;
 }
+
+@media screen and (max-width: 550px) {
+  .bar {
+    width: 11px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .bar {
+    width: 8.5px;
+  }
+}
