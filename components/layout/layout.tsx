@@ -98,11 +98,11 @@ export default function Layout({ children }: IProps) {
                 </Link>
               ))}
             </div>
-            <div className={classes.navBarInfo}>
+            {/* <div className={classes.navBarInfo}>
               <b>Yonatan Merkebu</b>
               <br />
               <h5>se.yonatan.merkebu@gmail.com</h5>
-            </div>
+            </div> */}
           </div>
         </Navbar>
       }
